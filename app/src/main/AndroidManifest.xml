@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vediccricket">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/main_trophy"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/main_trophy"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.VedicCricket">
+
+        <service android:name=".Service.BackgroundMusicService"/>
+
+        <activity android:name=".LeaderboardActivity"
+            android:screenOrientation="sensorLandscape"/>
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".MainGameActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="sensorLandscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".TutorialActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".practice_activity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="sensorLandscape" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
